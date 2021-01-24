@@ -1,0 +1,93 @@
+\doxysection{include/\+E\+X\+T\+I\+\_\+interface.h File Reference}
+\label{_e_x_t_i__interface_8h}\index{include/EXTI\_interface.h@{include/EXTI\_interface.h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{_e_x_t_i__interface_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ R\+I\+S\+I\+N\+G\+\_\+\+E\+D\+GE}~0
+\item 
+\#define \textbf{ F\+A\+L\+L\+I\+N\+G\+\_\+\+E\+D\+GE}~1
+\item 
+\#define \textbf{ O\+N\+\_\+\+C\+H\+A\+N\+GE}~2
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ M\+E\+X\+T\+I\+\_\+void\+Init} ()
+\item 
+void \textbf{ M\+E\+X\+T\+I\+\_\+void\+Enable\+E\+X\+TI} (\textbf{ u8} Copy\+\_\+u8\+Line)
+\item 
+void \textbf{ M\+E\+X\+T\+I\+\_\+void\+Disable\+E\+X\+TI} (\textbf{ u8} Copy\+\_\+u8\+Line)
+\item 
+void \textbf{ M\+E\+X\+T\+I\+\_\+void\+Sw\+Trigger} (\textbf{ u8} Copy\+\_\+u8\+Line)
+\item 
+void \textbf{ M\+E\+X\+T\+I\+\_\+void\+Set\+Signal\+Latch} (\textbf{ u8} Copy\+\_\+u8\+Line, \textbf{ u8} Copy\+\_\+u8\+Mode)
+\item 
+void \textbf{ M\+E\+X\+T\+I\+\_\+void\+Set\+Call\+Back} (void($\ast$ptr)(void), \textbf{ u8} Copy\+\_\+u8\+Line)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\label{_e_x_t_i__interface_8h_a159ba045d627097f4f2d351bec51afe1}} 
+\index{EXTI\_interface.h@{EXTI\_interface.h}!FALLING\_EDGE@{FALLING\_EDGE}}
+\index{FALLING\_EDGE@{FALLING\_EDGE}!EXTI\_interface.h@{EXTI\_interface.h}}
+\doxysubsubsection{FALLING\_EDGE}
+{\footnotesize\ttfamily \#define F\+A\+L\+L\+I\+N\+G\+\_\+\+E\+D\+GE~1}
+
+\mbox{\label{_e_x_t_i__interface_8h_a83548b85838332f25cbbb972f8b46f0b}} 
+\index{EXTI\_interface.h@{EXTI\_interface.h}!ON\_CHANGE@{ON\_CHANGE}}
+\index{ON\_CHANGE@{ON\_CHANGE}!EXTI\_interface.h@{EXTI\_interface.h}}
+\doxysubsubsection{ON\_CHANGE}
+{\footnotesize\ttfamily \#define O\+N\+\_\+\+C\+H\+A\+N\+GE~2}
+
+\mbox{\label{_e_x_t_i__interface_8h_af13ff90bb3a97b9d46ae59f02c515b67}} 
+\index{EXTI\_interface.h@{EXTI\_interface.h}!RISING\_EDGE@{RISING\_EDGE}}
+\index{RISING\_EDGE@{RISING\_EDGE}!EXTI\_interface.h@{EXTI\_interface.h}}
+\doxysubsubsection{RISING\_EDGE}
+{\footnotesize\ttfamily \#define R\+I\+S\+I\+N\+G\+\_\+\+E\+D\+GE~0}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_e_x_t_i__interface_8h_aac261abd94e812097f70e1eef0e76176}} 
+\index{EXTI\_interface.h@{EXTI\_interface.h}!MEXTI\_voidDisableEXTI@{MEXTI\_voidDisableEXTI}}
+\index{MEXTI\_voidDisableEXTI@{MEXTI\_voidDisableEXTI}!EXTI\_interface.h@{EXTI\_interface.h}}
+\doxysubsubsection{MEXTI\_voidDisableEXTI()}
+{\footnotesize\ttfamily void M\+E\+X\+T\+I\+\_\+void\+Disable\+E\+X\+TI (\begin{DoxyParamCaption}\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Line }\end{DoxyParamCaption})}
+
+\mbox{\label{_e_x_t_i__interface_8h_aaec835aeb3d8df221c32bc430be3e450}} 
+\index{EXTI\_interface.h@{EXTI\_interface.h}!MEXTI\_voidEnableEXTI@{MEXTI\_voidEnableEXTI}}
+\index{MEXTI\_voidEnableEXTI@{MEXTI\_voidEnableEXTI}!EXTI\_interface.h@{EXTI\_interface.h}}
+\doxysubsubsection{MEXTI\_voidEnableEXTI()}
+{\footnotesize\ttfamily void M\+E\+X\+T\+I\+\_\+void\+Enable\+E\+X\+TI (\begin{DoxyParamCaption}\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Line }\end{DoxyParamCaption})}
+
+\mbox{\label{_e_x_t_i__interface_8h_a2b5fcefd560214e9f61c75ce6d7d36e6}} 
+\index{EXTI\_interface.h@{EXTI\_interface.h}!MEXTI\_voidInit@{MEXTI\_voidInit}}
+\index{MEXTI\_voidInit@{MEXTI\_voidInit}!EXTI\_interface.h@{EXTI\_interface.h}}
+\doxysubsubsection{MEXTI\_voidInit()}
+{\footnotesize\ttfamily void M\+E\+X\+T\+I\+\_\+void\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\label{_e_x_t_i__interface_8h_a3760652435e777f7bedd33da470a49e2}} 
+\index{EXTI\_interface.h@{EXTI\_interface.h}!MEXTI\_voidSetCallBack@{MEXTI\_voidSetCallBack}}
+\index{MEXTI\_voidSetCallBack@{MEXTI\_voidSetCallBack}!EXTI\_interface.h@{EXTI\_interface.h}}
+\doxysubsubsection{MEXTI\_voidSetCallBack()}
+{\footnotesize\ttfamily void M\+E\+X\+T\+I\+\_\+void\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{void($\ast$)(void)}]{ptr,  }\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Line }\end{DoxyParamCaption})}
+
+\mbox{\label{_e_x_t_i__interface_8h_ac5c414d37023d930970bdacdbccd4d0a}} 
+\index{EXTI\_interface.h@{EXTI\_interface.h}!MEXTI\_voidSetSignalLatch@{MEXTI\_voidSetSignalLatch}}
+\index{MEXTI\_voidSetSignalLatch@{MEXTI\_voidSetSignalLatch}!EXTI\_interface.h@{EXTI\_interface.h}}
+\doxysubsubsection{MEXTI\_voidSetSignalLatch()}
+{\footnotesize\ttfamily void M\+E\+X\+T\+I\+\_\+void\+Set\+Signal\+Latch (\begin{DoxyParamCaption}\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Line,  }\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\label{_e_x_t_i__interface_8h_a12bb24b049e1eff0cda3cca99398c911}} 
+\index{EXTI\_interface.h@{EXTI\_interface.h}!MEXTI\_voidSwTrigger@{MEXTI\_voidSwTrigger}}
+\index{MEXTI\_voidSwTrigger@{MEXTI\_voidSwTrigger}!EXTI\_interface.h@{EXTI\_interface.h}}
+\doxysubsubsection{MEXTI\_voidSwTrigger()}
+{\footnotesize\ttfamily void M\+E\+X\+T\+I\+\_\+void\+Sw\+Trigger (\begin{DoxyParamCaption}\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Line }\end{DoxyParamCaption})}
+

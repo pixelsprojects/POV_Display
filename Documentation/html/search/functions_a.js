@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['tim1_5fup_5firqhandler_475',['TIM1_UP_IRQHandler',['../_t_i_m1__program_8c.html#a51741dbf9b0de1b8b56b5a6f1ef2e694',1,'TIM1_program.c']]],
+  ['tim1_5fvoidinit_476',['TIM1_voidInit',['../_t_i_m1__program_8c.html#a3f3c60895a4497b2f8b9a01553a73f63',1,'TIM1_voidInit(void):&#160;TIM1_program.c'],['../_t_i_m1__interface_8h.html#a3f3c60895a4497b2f8b9a01553a73f63',1,'TIM1_voidInit(void):&#160;TIM1_program.c']]],
+  ['tim1_5fvoidsetbusywait_477',['TIM1_voidSetBusyWait',['../_t_i_m1__program_8c.html#ab62598f98a158b7c09a1f0464d08b2e7',1,'TIM1_voidSetBusyWait(u16 TIM1_u16Ticks, u32 TIM1_u32ClkFreq):&#160;TIM1_program.c'],['../_t_i_m1__interface_8h.html#ab62598f98a158b7c09a1f0464d08b2e7',1,'TIM1_voidSetBusyWait(u16 TIM1_u16Ticks, u32 TIM1_u32ClkFreq):&#160;TIM1_program.c']]],
+  ['tim1_5fvoidsetperiodicinterval_478',['TIM1_voidSetPeriodicInterval',['../_t_i_m1__program_8c.html#aa6a5f8baa0596c326175c6d65005cb45',1,'TIM1_voidSetPeriodicInterval(u16 TIM1_u16Ticks, u32 TIM1_u32ClkFreq, void(*PtrToFunc)(void)):&#160;TIM1_program.c'],['../_t_i_m1__interface_8h.html#aa6a5f8baa0596c326175c6d65005cb45',1,'TIM1_voidSetPeriodicInterval(u16 TIM1_u16Ticks, u32 TIM1_u32ClkFreq, void(*PtrToFunc)(void)):&#160;TIM1_program.c']]],
+  ['tim1_5fvoidsetsingleinterval_479',['TIM1_voidSetSingleInterval',['../_t_i_m1__program_8c.html#ae35c83a398e7802d38b0254c8c5766cd',1,'TIM1_voidSetSingleInterval(u16 TIM1_u16Ticks, u32 TIM1_u32ClkFreq, void(*PtrToFunc)(void)):&#160;TIM1_program.c'],['../_t_i_m1__interface_8h.html#ae35c83a398e7802d38b0254c8c5766cd',1,'TIM1_voidSetSingleInterval(u16 TIM1_u16Ticks, u32 TIM1_u32ClkFreq, void(*PtrToFunc)(void)):&#160;TIM1_program.c']]],
+  ['tim2_5firqhandler_480',['TIM2_IRQHandler',['../_g_p_t_i_m__program_8c.html#a38ad4725462bdc5e86c4ead4f04b9fc2',1,'GPTIM_program.c']]]
+];

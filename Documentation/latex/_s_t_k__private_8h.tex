@@ -1,0 +1,133 @@
+\doxysection{include/\+S\+T\+K\+\_\+private.h File Reference}
+\label{_s_t_k__private_8h}\index{include/STK\_private.h@{include/STK\_private.h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{_s_t_k__private_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ S\+T\+K\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}~0x\+E000\+E010
+\item 
+\#define \textbf{ S\+T\+K\+\_\+\+C\+T\+RL}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ S\+T\+K\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}+0x00))
+\item 
+\#define \textbf{ S\+T\+K\+\_\+\+L\+O\+AD}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ S\+T\+K\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}+0x04))
+\item 
+\#define \textbf{ S\+T\+K\+\_\+\+V\+AL}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ S\+T\+K\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}+0x08))
+\item 
+\#define \textbf{ S\+T\+K\+\_\+\+C\+A\+L\+IB}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ S\+T\+K\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}+0x0C))
+\item 
+\#define \textbf{ C\+O\+U\+N\+T\+F\+L\+AG}~16
+\item 
+\#define \textbf{ C\+L\+K\+S\+O\+U\+R\+CE}~2
+\item 
+\#define \textbf{ T\+I\+C\+K\+I\+NT}~1
+\item 
+\#define \textbf{ M\+O\+DE}~0
+\item 
+\#define \textbf{ A\+HB}~0
+\item 
+\#define \textbf{ A\+H\+B\+\_\+\+D\+I\+V\+\_\+8}~1
+\item 
+\#define \textbf{ S\+T\+K\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+I\+N\+T\+E\+R\+V\+AL}~0
+\item 
+\#define \textbf{ S\+T\+K\+\_\+\+P\+E\+R\+I\+O\+D\+I\+C\+\_\+\+I\+N\+T\+E\+R\+V\+AL}~1
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \textbf{ Callback} )(void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\label{_s_t_k__private_8h_a942fd4ea5019745b10664642934d6c4f}} 
+\index{STK\_private.h@{STK\_private.h}!AHB@{AHB}}
+\index{AHB@{AHB}!STK\_private.h@{STK\_private.h}}
+\doxysubsubsection{AHB}
+{\footnotesize\ttfamily \#define A\+HB~0}
+
+\mbox{\label{_s_t_k__private_8h_adc3caba38f234926376a57eb3741db61}} 
+\index{STK\_private.h@{STK\_private.h}!AHB\_DIV\_8@{AHB\_DIV\_8}}
+\index{AHB\_DIV\_8@{AHB\_DIV\_8}!STK\_private.h@{STK\_private.h}}
+\doxysubsubsection{AHB\_DIV\_8}
+{\footnotesize\ttfamily \#define A\+H\+B\+\_\+\+D\+I\+V\+\_\+8~1}
+
+\mbox{\label{_s_t_k__private_8h_a1c80d256b9c8188cb5aaf267b3303c92}} 
+\index{STK\_private.h@{STK\_private.h}!CLKSOURCE@{CLKSOURCE}}
+\index{CLKSOURCE@{CLKSOURCE}!STK\_private.h@{STK\_private.h}}
+\doxysubsubsection{CLKSOURCE}
+{\footnotesize\ttfamily \#define C\+L\+K\+S\+O\+U\+R\+CE~2}
+
+\mbox{\label{_s_t_k__private_8h_af1ecc7ccf2930b69effd1a64a1058d7d}} 
+\index{STK\_private.h@{STK\_private.h}!COUNTFLAG@{COUNTFLAG}}
+\index{COUNTFLAG@{COUNTFLAG}!STK\_private.h@{STK\_private.h}}
+\doxysubsubsection{COUNTFLAG}
+{\footnotesize\ttfamily \#define C\+O\+U\+N\+T\+F\+L\+AG~16}
+
+\mbox{\label{_s_t_k__private_8h_ab8c52c1b4c021ed3e6b6b677bd2ac019}} 
+\index{STK\_private.h@{STK\_private.h}!MODE@{MODE}}
+\index{MODE@{MODE}!STK\_private.h@{STK\_private.h}}
+\doxysubsubsection{MODE}
+{\footnotesize\ttfamily \#define M\+O\+DE~0}
+
+\mbox{\label{_s_t_k__private_8h_af58ecf965bfd15e83bf6c3c445fc38e5}} 
+\index{STK\_private.h@{STK\_private.h}!STK\_BASE\_ADDRESS@{STK\_BASE\_ADDRESS}}
+\index{STK\_BASE\_ADDRESS@{STK\_BASE\_ADDRESS}!STK\_private.h@{STK\_private.h}}
+\doxysubsubsection{STK\_BASE\_ADDRESS}
+{\footnotesize\ttfamily \#define S\+T\+K\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS~0x\+E000\+E010}
+
+\mbox{\label{_s_t_k__private_8h_a2008449261a84462413fc10e8e949ac4}} 
+\index{STK\_private.h@{STK\_private.h}!STK\_CALIB@{STK\_CALIB}}
+\index{STK\_CALIB@{STK\_CALIB}!STK\_private.h@{STK\_private.h}}
+\doxysubsubsection{STK\_CALIB}
+{\footnotesize\ttfamily \#define S\+T\+K\+\_\+\+C\+A\+L\+IB~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ S\+T\+K\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}+0x0C))}
+
+\mbox{\label{_s_t_k__private_8h_a4cff03f1bbb43e57798d6321e8bb966d}} 
+\index{STK\_private.h@{STK\_private.h}!STK\_CTRL@{STK\_CTRL}}
+\index{STK\_CTRL@{STK\_CTRL}!STK\_private.h@{STK\_private.h}}
+\doxysubsubsection{STK\_CTRL}
+{\footnotesize\ttfamily \#define S\+T\+K\+\_\+\+C\+T\+RL~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ S\+T\+K\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}+0x00))}
+
+\mbox{\label{_s_t_k__private_8h_a93cbd55f028c079c458d5159983a0684}} 
+\index{STK\_private.h@{STK\_private.h}!STK\_LOAD@{STK\_LOAD}}
+\index{STK\_LOAD@{STK\_LOAD}!STK\_private.h@{STK\_private.h}}
+\doxysubsubsection{STK\_LOAD}
+{\footnotesize\ttfamily \#define S\+T\+K\+\_\+\+L\+O\+AD~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ S\+T\+K\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}+0x04))}
+
+\mbox{\label{_s_t_k__private_8h_a1f030f6659543d32ab687bfec5f145ef}} 
+\index{STK\_private.h@{STK\_private.h}!STK\_PERIODIC\_INTERVAL@{STK\_PERIODIC\_INTERVAL}}
+\index{STK\_PERIODIC\_INTERVAL@{STK\_PERIODIC\_INTERVAL}!STK\_private.h@{STK\_private.h}}
+\doxysubsubsection{STK\_PERIODIC\_INTERVAL}
+{\footnotesize\ttfamily \#define S\+T\+K\+\_\+\+P\+E\+R\+I\+O\+D\+I\+C\+\_\+\+I\+N\+T\+E\+R\+V\+AL~1}
+
+\mbox{\label{_s_t_k__private_8h_a3caf214f4c131c7096ee0f102381cf59}} 
+\index{STK\_private.h@{STK\_private.h}!STK\_SINGLE\_INTERVAL@{STK\_SINGLE\_INTERVAL}}
+\index{STK\_SINGLE\_INTERVAL@{STK\_SINGLE\_INTERVAL}!STK\_private.h@{STK\_private.h}}
+\doxysubsubsection{STK\_SINGLE\_INTERVAL}
+{\footnotesize\ttfamily \#define S\+T\+K\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+I\+N\+T\+E\+R\+V\+AL~0}
+
+\mbox{\label{_s_t_k__private_8h_a9944fae2f819211da9884f03db333ad8}} 
+\index{STK\_private.h@{STK\_private.h}!STK\_VAL@{STK\_VAL}}
+\index{STK\_VAL@{STK\_VAL}!STK\_private.h@{STK\_private.h}}
+\doxysubsubsection{STK\_VAL}
+{\footnotesize\ttfamily \#define S\+T\+K\+\_\+\+V\+AL~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ S\+T\+K\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}+0x08))}
+
+\mbox{\label{_s_t_k__private_8h_a85a15b5192e74e56ab2a437c5f8c6898}} 
+\index{STK\_private.h@{STK\_private.h}!TICKINT@{TICKINT}}
+\index{TICKINT@{TICKINT}!STK\_private.h@{STK\_private.h}}
+\doxysubsubsection{TICKINT}
+{\footnotesize\ttfamily \#define T\+I\+C\+K\+I\+NT~1}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\label{_s_t_k__private_8h_a05baf27d215741ecefd9bff88c7b7345}} 
+\index{STK\_private.h@{STK\_private.h}!Callback@{Callback}}
+\index{Callback@{Callback}!STK\_private.h@{STK\_private.h}}
+\doxysubsubsection{Callback}
+{\footnotesize\ttfamily void($\ast$ Callback) (void)}
+

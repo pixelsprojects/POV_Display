@@ -1,0 +1,79 @@
+\doxysection{include/\+S\+T\+K\+\_\+interface.h File Reference}
+\label{_s_t_k__interface_8h}\index{include/STK\_interface.h@{include/STK\_interface.h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_s_t_k__interface_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ M\+S\+T\+K\+\_\+void\+Init} (void)
+\item 
+void \textbf{ M\+S\+T\+K\+\_\+void\+Set\+Busy\+Wait} (\textbf{ u32} Copy\+\_\+u32\+Ticks)
+\item 
+void \textbf{ Delay} (\textbf{ u32} Copy\+\_\+u32\+Time\+In\+Micro\+Seconds)
+\item 
+void \textbf{ M\+S\+T\+K\+\_\+void\+Set\+Single\+Interval} (\textbf{ u32} Copy\+\_\+u32\+Ticks, void($\ast$Copy\+\_\+ptr)(void))
+\item 
+void \textbf{ M\+S\+T\+K\+\_\+void\+Set\+Periodic\+Interval} (\textbf{ u32} Copy\+\_\+u32\+Ticks, void($\ast$Copy\+\_\+ptr)(void))
+\item 
+void \textbf{ M\+S\+T\+K\+\_\+void\+Stop\+Interval} (void)
+\item 
+\textbf{ u32} \textbf{ M\+S\+T\+K\+\_\+u32\+Get\+Elapsed\+Time} (void)
+\item 
+\textbf{ u32} \textbf{ M\+S\+T\+K\+\_\+u32\+Get\+Remaining\+Time} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_s_t_k__interface_8h_a6e8c6812b3e521759196220d964cafb4}} 
+\index{STK\_interface.h@{STK\_interface.h}!Delay@{Delay}}
+\index{Delay@{Delay}!STK\_interface.h@{STK\_interface.h}}
+\doxysubsubsection{Delay()}
+{\footnotesize\ttfamily void Delay (\begin{DoxyParamCaption}\item[{\textbf{ u32}}]{Copy\+\_\+u32\+Time\+In\+Micro\+Seconds }\end{DoxyParamCaption})}
+
+\mbox{\label{_s_t_k__interface_8h_a95df624a3a9c0f408e9cab21a00b00af}} 
+\index{STK\_interface.h@{STK\_interface.h}!MSTK\_u32GetElapsedTime@{MSTK\_u32GetElapsedTime}}
+\index{MSTK\_u32GetElapsedTime@{MSTK\_u32GetElapsedTime}!STK\_interface.h@{STK\_interface.h}}
+\doxysubsubsection{MSTK\_u32GetElapsedTime()}
+{\footnotesize\ttfamily \textbf{ u32} M\+S\+T\+K\+\_\+u32\+Get\+Elapsed\+Time (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\label{_s_t_k__interface_8h_a8a5dc9ff294c79d6d44c1fc4d8669e6e}} 
+\index{STK\_interface.h@{STK\_interface.h}!MSTK\_u32GetRemainingTime@{MSTK\_u32GetRemainingTime}}
+\index{MSTK\_u32GetRemainingTime@{MSTK\_u32GetRemainingTime}!STK\_interface.h@{STK\_interface.h}}
+\doxysubsubsection{MSTK\_u32GetRemainingTime()}
+{\footnotesize\ttfamily \textbf{ u32} M\+S\+T\+K\+\_\+u32\+Get\+Remaining\+Time (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\label{_s_t_k__interface_8h_ab6a2d93c82b336dafa2aee648288f3d2}} 
+\index{STK\_interface.h@{STK\_interface.h}!MSTK\_voidInit@{MSTK\_voidInit}}
+\index{MSTK\_voidInit@{MSTK\_voidInit}!STK\_interface.h@{STK\_interface.h}}
+\doxysubsubsection{MSTK\_voidInit()}
+{\footnotesize\ttfamily void M\+S\+T\+K\+\_\+void\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\label{_s_t_k__interface_8h_a35aa72c249321894b0411737c3080ade}} 
+\index{STK\_interface.h@{STK\_interface.h}!MSTK\_voidSetBusyWait@{MSTK\_voidSetBusyWait}}
+\index{MSTK\_voidSetBusyWait@{MSTK\_voidSetBusyWait}!STK\_interface.h@{STK\_interface.h}}
+\doxysubsubsection{MSTK\_voidSetBusyWait()}
+{\footnotesize\ttfamily void M\+S\+T\+K\+\_\+void\+Set\+Busy\+Wait (\begin{DoxyParamCaption}\item[{\textbf{ u32}}]{Copy\+\_\+u32\+Ticks }\end{DoxyParamCaption})}
+
+\mbox{\label{_s_t_k__interface_8h_a424ee4cd1e96601b13520688c6c6cab0}} 
+\index{STK\_interface.h@{STK\_interface.h}!MSTK\_voidSetPeriodicInterval@{MSTK\_voidSetPeriodicInterval}}
+\index{MSTK\_voidSetPeriodicInterval@{MSTK\_voidSetPeriodicInterval}!STK\_interface.h@{STK\_interface.h}}
+\doxysubsubsection{MSTK\_voidSetPeriodicInterval()}
+{\footnotesize\ttfamily void M\+S\+T\+K\+\_\+void\+Set\+Periodic\+Interval (\begin{DoxyParamCaption}\item[{\textbf{ u32}}]{Copy\+\_\+u32\+Ticks,  }\item[{void($\ast$)(void)}]{Copy\+\_\+ptr }\end{DoxyParamCaption})}
+
+\mbox{\label{_s_t_k__interface_8h_a9fe4ba68b219a627416d0c298c34fe8c}} 
+\index{STK\_interface.h@{STK\_interface.h}!MSTK\_voidSetSingleInterval@{MSTK\_voidSetSingleInterval}}
+\index{MSTK\_voidSetSingleInterval@{MSTK\_voidSetSingleInterval}!STK\_interface.h@{STK\_interface.h}}
+\doxysubsubsection{MSTK\_voidSetSingleInterval()}
+{\footnotesize\ttfamily void M\+S\+T\+K\+\_\+void\+Set\+Single\+Interval (\begin{DoxyParamCaption}\item[{\textbf{ u32}}]{Copy\+\_\+u32\+Ticks,  }\item[{void($\ast$)(void)}]{Copy\+\_\+ptr }\end{DoxyParamCaption})}
+
+\mbox{\label{_s_t_k__interface_8h_a2f4b0e9ab49c2456bd0b66b60f4aad68}} 
+\index{STK\_interface.h@{STK\_interface.h}!MSTK\_voidStopInterval@{MSTK\_voidStopInterval}}
+\index{MSTK\_voidStopInterval@{MSTK\_voidStopInterval}!STK\_interface.h@{STK\_interface.h}}
+\doxysubsubsection{MSTK\_voidStopInterval()}
+{\footnotesize\ttfamily void M\+S\+T\+K\+\_\+void\+Stop\+Interval (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+

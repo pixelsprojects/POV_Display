@@ -1,0 +1,552 @@
+\doxysection{src/main.c File Reference}
+\label{main_8c}\index{src/main.c@{src/main.c}}
+{\ttfamily \#include \char`\"{}S\+T\+D\+\_\+\+T\+Y\+P\+E\+S.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}B\+I\+T\+\_\+\+M\+A\+T\+H.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}R\+C\+C\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}G\+P\+I\+O\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}N\+V\+I\+C\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S\+T\+K\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}A\+F\+I\+O\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}E\+X\+T\+I\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}U\+S\+A\+R\+T\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}T\+I\+M1\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}G\+P\+T\+I\+M\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S2\+P\+\_\+interface.\+h\char`\"{}}\newline
+Include dependency graph for main.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ R\+I\+G\+H\+T\+\_\+\+Button}~100
+\item 
+\#define \textbf{ L\+E\+F\+T\+\_\+\+Button}~105
+\item 
+\#define \textbf{ P\+O\+W\+E\+R\+\_\+\+Button}~110
+\item 
+\#define \textbf{ O\+K\+\_\+\+Button}~115
+\item 
+\#define \textbf{ P\+\_\+\+P\+L\+U\+S\+\_\+\+Button}~120
+\item 
+\#define \textbf{ P\+\_\+\+M\+I\+N\+U\+S\+\_\+\+Button}~125
+\item 
+\#define \textbf{ V\+O\+L\+\_\+\+P\+L\+U\+S\+\_\+\+Button}~130
+\item 
+\#define \textbf{ V\+O\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+\+Button}~135
+\item 
+\#define \textbf{ L\+E\+A\+RN}~5
+\item 
+\#define \textbf{ M\+A\+KE}~10
+\item 
+\#define \textbf{ S\+H\+A\+RE}~15
+\item 
+\#define \textbf{ WE}~20
+\item 
+\#define \textbf{ A\+RE}~25
+\item 
+\#define \textbf{ P\+I\+X\+E\+LS}~30
+\item 
+\#define \textbf{ W\+E\+\_\+\+A\+RE}~35
+\item 
+\#define \textbf{ T\+H\+A\+N\+KS}~40
+\item 
+\#define \textbf{ T\+R\+E\+ND}~45
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ Calc\+\_\+void\+Time} (void)
+\item 
+void \textbf{ Hall\+Effect\+\_\+void\+I\+RQ} (void)
+\item 
+void \textbf{ void\+Take\+Action} (\textbf{ u32} u32\+Decision)
+\item 
+void \textbf{ void\+Reset\+Array\+Elements} (volatile \textbf{ u32} $\ast$arr, \textbf{ u8} size)
+\item 
+void \textbf{ I\+R\+\_\+void\+Read\+Frame} (void)
+\item 
+void \textbf{ I\+R\+\_\+void\+Get\+Frame} (void)
+\item 
+void \textbf{ P\+O\+V\+\_\+\+Display\+Minutes} (\textbf{ u8} Num\+Of\+Minutes, \textbf{ u16} Distance\+Betweenthem)
+\item 
+void \textbf{ P\+O\+V\+\_\+\+Display\+Clock} (void)
+\item 
+void \textbf{ P\+O\+V\+\_\+\+Display\+Word} (\textbf{ u16} $\ast$Word, \textbf{ u16} Size\+Of\+Word)
+\item 
+void \textbf{ main} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>volatile \textbf{ u8} \textbf{ u8StartFlag}\\
+\>volatile \textbf{ u32} \textbf{ u32Counter} [50]\\
+\>volatile \textbf{ u8} \textbf{ u8IndexCounter}\\
+\>volatile \textbf{ u8} \textbf{ u8Button}\\
+\} \textbf{ IR}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>volatile \textbf{ u8} \textbf{ u8Flag}\\
+\} \textbf{ HallEffect}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>volatile \textbf{ u8} \textbf{ u8OneCycleDone}\\
+\>volatile \textbf{ u32} \textbf{ u32PeriodicTime}\\
+\>volatile \textbf{ u16} \textbf{ u16Frequency}\\
+\>volatile \textbf{ u8} \textbf{ u8FreqFlag}\\
+\} \textbf{ Motor}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>volatile \textbf{ u8} \textbf{ u8FlagsIndex}\\
+\>volatile \textbf{ u8} \textbf{ u8DisplayFlag}\\
+\>volatile \textbf{ u16} \textbf{ u16Counter}\\
+\>volatile \textbf{ u8} \textbf{ u8ShiftWord}\\
+\} \textbf{ POV}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>volatile \textbf{ u16} \textbf{ CurrentDistanceBetweenTeeth}\\
+\>volatile \textbf{ u8} \textbf{ ArrowFlag}\\
+\>volatile \textbf{ s8} \textbf{ ArrowCounter}\\
+\} \textbf{ Clock}\\
+
+\end{tabbing}\item 
+volatile \textbf{ u16} \textbf{ Average\+\_\+u16\+Freq} [10] = \{0\}
+\item 
+const \textbf{ f32} \textbf{ Distance} = 125.\+6637
+\item 
+volatile \textbf{ u8} \textbf{ P\+O\+V\+\_\+u8\+Flags} [9] = \{\textbf{ WE},\textbf{ L\+E\+A\+RN},\textbf{ M\+A\+KE},\textbf{ S\+H\+A\+RE},\textbf{ W\+E\+\_\+\+A\+RE},\textbf{ P\+I\+X\+E\+LS},\textbf{ T\+H\+A\+N\+KS},\textbf{ T\+R\+E\+ND},0\}
+\begin{DoxyCompactList}\small\item\em this array is and indicator, it will be used by IR when user presses on some button the display will show another word in order \end{DoxyCompactList}\item 
+\textbf{ u16} \textbf{ P\+O\+V\+\_\+u16\+Short\+Arrow} [5] =\{0x8400,0x8200,0xff00,0x4100,0x4200\}
+\begin{DoxyCompactList}\small\item\em this is the array which responsible for displaying the short arrow in the Clock \end{DoxyCompactList}\item 
+\textbf{ u16} \textbf{ P\+O\+V\+\_\+u16\+Long\+Arrow} [5] =\{0x20,0x10,0xfff8,0x8,0x10\}
+\begin{DoxyCompactList}\small\item\em this is the array which responsible for displaying the long arrow in the Clock \end{DoxyCompactList}\item 
+\textbf{ u16} \textbf{ P\+O\+V\+\_\+u16\+Num1} [3] =\{0x4,0x2,0x3f\}
+\begin{DoxyCompactList}\small\item\em to display Numbers \end{DoxyCompactList}\item 
+\textbf{ u16} \textbf{ P\+O\+V\+\_\+u16\+Num2} [4] =\{0x32,0x29,0x29,0x26\}
+\item 
+\textbf{ u16} \textbf{ P\+O\+V\+\_\+u16\+Num3} [7] =\{0xe,0x1,0x1,0x7,0x1,0x9,0x6\}
+\item 
+\textbf{ u16} \textbf{ P\+O\+V\+\_\+u16\+Num6} [4] =\{0x26,0x25,0x25,0x1e\}
+\item 
+\textbf{ u16} \textbf{ P\+O\+V\+\_\+u16\+Num9} [7] =\{0xf,0x8,0x8,0xf,0x9,0x9,0xf\}
+\item 
+\textbf{ u16} \textbf{ M\+IX} [5] =\{0\}
+\begin{DoxyCompactList}\small\item\em we\textquotesingle{}ll use this array in the mix between displaying the short arrow and Number 6 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\label{main_8c_a59c995b47722b4b67a5ba4b06a43845c}} 
+\index{main.c@{main.c}!ARE@{ARE}}
+\index{ARE@{ARE}!main.c@{main.c}}
+\doxysubsubsection{ARE}
+{\footnotesize\ttfamily \#define A\+RE~25}
+
+\mbox{\label{main_8c_adfea8c2c7354f194e7d4f943604e6456}} 
+\index{main.c@{main.c}!LEARN@{LEARN}}
+\index{LEARN@{LEARN}!main.c@{main.c}}
+\doxysubsubsection{LEARN}
+{\footnotesize\ttfamily \#define L\+E\+A\+RN~5}
+
+\mbox{\label{main_8c_aa8f8ed2a01dcf65935072d34b2cddf19}} 
+\index{main.c@{main.c}!LEFT\_Button@{LEFT\_Button}}
+\index{LEFT\_Button@{LEFT\_Button}!main.c@{main.c}}
+\doxysubsubsection{LEFT\_Button}
+{\footnotesize\ttfamily \#define L\+E\+F\+T\+\_\+\+Button~105}
+
+\mbox{\label{main_8c_ac2fc62a28ef54e32a54f8a40bba57944}} 
+\index{main.c@{main.c}!MAKE@{MAKE}}
+\index{MAKE@{MAKE}!main.c@{main.c}}
+\doxysubsubsection{MAKE}
+{\footnotesize\ttfamily \#define M\+A\+KE~10}
+
+\mbox{\label{main_8c_a25a2974c953d82e0c9961f69014c4b05}} 
+\index{main.c@{main.c}!OK\_Button@{OK\_Button}}
+\index{OK\_Button@{OK\_Button}!main.c@{main.c}}
+\doxysubsubsection{OK\_Button}
+{\footnotesize\ttfamily \#define O\+K\+\_\+\+Button~115}
+
+\mbox{\label{main_8c_a2e4c7442e3180ab9639025e438e44e94}} 
+\index{main.c@{main.c}!P\_MINUS\_Button@{P\_MINUS\_Button}}
+\index{P\_MINUS\_Button@{P\_MINUS\_Button}!main.c@{main.c}}
+\doxysubsubsection{P\_MINUS\_Button}
+{\footnotesize\ttfamily \#define P\+\_\+\+M\+I\+N\+U\+S\+\_\+\+Button~125}
+
+\mbox{\label{main_8c_a4cc8d1fe0b55a67f2d027b2c4ba2774d}} 
+\index{main.c@{main.c}!P\_PLUS\_Button@{P\_PLUS\_Button}}
+\index{P\_PLUS\_Button@{P\_PLUS\_Button}!main.c@{main.c}}
+\doxysubsubsection{P\_PLUS\_Button}
+{\footnotesize\ttfamily \#define P\+\_\+\+P\+L\+U\+S\+\_\+\+Button~120}
+
+\mbox{\label{main_8c_a94b4f8a8b30a68857938778e1c1492af}} 
+\index{main.c@{main.c}!PIXELS@{PIXELS}}
+\index{PIXELS@{PIXELS}!main.c@{main.c}}
+\doxysubsubsection{PIXELS}
+{\footnotesize\ttfamily \#define P\+I\+X\+E\+LS~30}
+
+\mbox{\label{main_8c_aebb4d9b727a7d5a58eb3b92e79a261a8}} 
+\index{main.c@{main.c}!POWER\_Button@{POWER\_Button}}
+\index{POWER\_Button@{POWER\_Button}!main.c@{main.c}}
+\doxysubsubsection{POWER\_Button}
+{\footnotesize\ttfamily \#define P\+O\+W\+E\+R\+\_\+\+Button~110}
+
+\mbox{\label{main_8c_a605f956fae0e3a0754107071dd48dfdb}} 
+\index{main.c@{main.c}!RIGHT\_Button@{RIGHT\_Button}}
+\index{RIGHT\_Button@{RIGHT\_Button}!main.c@{main.c}}
+\doxysubsubsection{RIGHT\_Button}
+{\footnotesize\ttfamily \#define R\+I\+G\+H\+T\+\_\+\+Button~100}
+
+\mbox{\label{main_8c_a6477a298862ab24dff357fd65e27ae72}} 
+\index{main.c@{main.c}!SHARE@{SHARE}}
+\index{SHARE@{SHARE}!main.c@{main.c}}
+\doxysubsubsection{SHARE}
+{\footnotesize\ttfamily \#define S\+H\+A\+RE~15}
+
+\mbox{\label{main_8c_a03390f928591235a94f6f58bd47df10d}} 
+\index{main.c@{main.c}!THANKS@{THANKS}}
+\index{THANKS@{THANKS}!main.c@{main.c}}
+\doxysubsubsection{THANKS}
+{\footnotesize\ttfamily \#define T\+H\+A\+N\+KS~40}
+
+\mbox{\label{main_8c_a35da0a62aa8a3d60462b92ddb3f9d26c}} 
+\index{main.c@{main.c}!TREND@{TREND}}
+\index{TREND@{TREND}!main.c@{main.c}}
+\doxysubsubsection{TREND}
+{\footnotesize\ttfamily \#define T\+R\+E\+ND~45}
+
+\mbox{\label{main_8c_a3409cf63118c6ded0b6b87ee0ce7b75d}} 
+\index{main.c@{main.c}!VOL\_MINUS\_Button@{VOL\_MINUS\_Button}}
+\index{VOL\_MINUS\_Button@{VOL\_MINUS\_Button}!main.c@{main.c}}
+\doxysubsubsection{VOL\_MINUS\_Button}
+{\footnotesize\ttfamily \#define V\+O\+L\+\_\+\+M\+I\+N\+U\+S\+\_\+\+Button~135}
+
+\mbox{\label{main_8c_a0102249c0729b36ee571e80b2cfa73f6}} 
+\index{main.c@{main.c}!VOL\_PLUS\_Button@{VOL\_PLUS\_Button}}
+\index{VOL\_PLUS\_Button@{VOL\_PLUS\_Button}!main.c@{main.c}}
+\doxysubsubsection{VOL\_PLUS\_Button}
+{\footnotesize\ttfamily \#define V\+O\+L\+\_\+\+P\+L\+U\+S\+\_\+\+Button~130}
+
+\mbox{\label{main_8c_a48235d592c83d12e5b27c989656329d0}} 
+\index{main.c@{main.c}!WE@{WE}}
+\index{WE@{WE}!main.c@{main.c}}
+\doxysubsubsection{WE}
+{\footnotesize\ttfamily \#define WE~20}
+
+\mbox{\label{main_8c_a25ce45a9e92aa0b1ee8f03f55b3ad89e}} 
+\index{main.c@{main.c}!WE\_ARE@{WE\_ARE}}
+\index{WE\_ARE@{WE\_ARE}!main.c@{main.c}}
+\doxysubsubsection{WE\_ARE}
+{\footnotesize\ttfamily \#define W\+E\+\_\+\+A\+RE~35}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{main_8c_a15f04eac956966e1e4cc08d30d021b51}} 
+\index{main.c@{main.c}!Calc\_voidTime@{Calc\_voidTime}}
+\index{Calc\_voidTime@{Calc\_voidTime}!main.c@{main.c}}
+\doxysubsubsection{Calc\_voidTime()}
+{\footnotesize\ttfamily void Calc\+\_\+void\+Time (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{main_8c_a15f04eac956966e1e4cc08d30d021b51_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{main_8c_a8f31ded076f3e09da8cdfa2780dc1431}} 
+\index{main.c@{main.c}!HallEffect\_voidIRQ@{HallEffect\_voidIRQ}}
+\index{HallEffect\_voidIRQ@{HallEffect\_voidIRQ}!main.c@{main.c}}
+\doxysubsubsection{HallEffect\_voidIRQ()}
+{\footnotesize\ttfamily void Hall\+Effect\+\_\+void\+I\+RQ (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+@\+Description this function calculates the Motor Frequency by reading the the Frequency for 10-\/times then taking the average to enhance the precision
+
+@\+Motor\+\_\+\+Frequency is 9 @\+Description the interrupt gives us the Frequency for testing only Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a8f31ded076f3e09da8cdfa2780dc1431_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{main_8c_a53f2b9a0af12fa9e99c49a7ef9809613}} 
+\index{main.c@{main.c}!IR\_voidGetFrame@{IR\_voidGetFrame}}
+\index{IR\_voidGetFrame@{IR\_voidGetFrame}!main.c@{main.c}}
+\doxysubsubsection{IR\_voidGetFrame()}
+{\footnotesize\ttfamily void I\+R\+\_\+void\+Get\+Frame (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8c_adae5ff7a5e4d3fc50048c5964bc5a6c9}} 
+\index{main.c@{main.c}!IR\_voidReadFrame@{IR\_voidReadFrame}}
+\index{IR\_voidReadFrame@{IR\_voidReadFrame}!main.c@{main.c}}
+\doxysubsubsection{IR\_voidReadFrame()}
+{\footnotesize\ttfamily void I\+R\+\_\+void\+Read\+Frame (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8c_a6288eba0f8e8ad3ab1544ad731eb7667}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{main()}
+{\footnotesize\ttfamily void main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8c_a92fbabd02bb2f6bcc2f1b7ee32e3349b}} 
+\index{main.c@{main.c}!POV\_DisplayClock@{POV\_DisplayClock}}
+\index{POV\_DisplayClock@{POV\_DisplayClock}!main.c@{main.c}}
+\doxysubsubsection{POV\_DisplayClock()}
+{\footnotesize\ttfamily void P\+O\+V\+\_\+\+Display\+Clock (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8c_af8257f9b83146fe23c32318a44774086}} 
+\index{main.c@{main.c}!POV\_DisplayMinutes@{POV\_DisplayMinutes}}
+\index{POV\_DisplayMinutes@{POV\_DisplayMinutes}!main.c@{main.c}}
+\doxysubsubsection{POV\_DisplayMinutes()}
+{\footnotesize\ttfamily void P\+O\+V\+\_\+\+Display\+Minutes (\begin{DoxyParamCaption}\item[{\textbf{ u8}}]{Num\+Of\+Minutes,  }\item[{\textbf{ u16}}]{Distance\+Betweenthem }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8c_a993c4199d72b4d05b3e43991e04b86ba}} 
+\index{main.c@{main.c}!POV\_DisplayWord@{POV\_DisplayWord}}
+\index{POV\_DisplayWord@{POV\_DisplayWord}!main.c@{main.c}}
+\doxysubsubsection{POV\_DisplayWord()}
+{\footnotesize\ttfamily void P\+O\+V\+\_\+\+Display\+Word (\begin{DoxyParamCaption}\item[{\textbf{ u16} $\ast$}]{Word,  }\item[{\textbf{ u16}}]{Size\+Of\+Word }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8c_ae5644cc22d5e86a1b06b779082480f37}} 
+\index{main.c@{main.c}!voidResetArrayElements@{voidResetArrayElements}}
+\index{voidResetArrayElements@{voidResetArrayElements}!main.c@{main.c}}
+\doxysubsubsection{voidResetArrayElements()}
+{\footnotesize\ttfamily void void\+Reset\+Array\+Elements (\begin{DoxyParamCaption}\item[{volatile \textbf{ u32} $\ast$}]{arr,  }\item[{\textbf{ u8}}]{size }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8c_a97ad6b57edd9a2a1ed4ac5cc2b0036ff}} 
+\index{main.c@{main.c}!voidTakeAction@{voidTakeAction}}
+\index{voidTakeAction@{voidTakeAction}!main.c@{main.c}}
+\doxysubsubsection{voidTakeAction()}
+{\footnotesize\ttfamily void void\+Take\+Action (\begin{DoxyParamCaption}\item[{\textbf{ u32}}]{u32\+Decision }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\label{main_8c_aaa2b226ebb93d3ccc72755f8108d8303}} 
+\index{main.c@{main.c}!ArrowCounter@{ArrowCounter}}
+\index{ArrowCounter@{ArrowCounter}!main.c@{main.c}}
+\doxysubsubsection{ArrowCounter}
+{\footnotesize\ttfamily volatile \textbf{ s8} Arrow\+Counter}
+
+\mbox{\label{main_8c_aba0ab442ee8ffdc570b295f5faf0f246}} 
+\index{main.c@{main.c}!ArrowFlag@{ArrowFlag}}
+\index{ArrowFlag@{ArrowFlag}!main.c@{main.c}}
+\doxysubsubsection{ArrowFlag}
+{\footnotesize\ttfamily volatile \textbf{ u8} Arrow\+Flag}
+
+\mbox{\label{main_8c_a2fafb0a22d949b53354ae5e2086887dd}} 
+\index{main.c@{main.c}!Average\_u16Freq@{Average\_u16Freq}}
+\index{Average\_u16Freq@{Average\_u16Freq}!main.c@{main.c}}
+\doxysubsubsection{Average\_u16Freq}
+{\footnotesize\ttfamily volatile \textbf{ u16} Average\+\_\+u16\+Freq[10] = \{0\}}
+
+\mbox{\label{main_8c_a013121f20e5325dd96c8e92b3cb4b9af}} 
+\index{main.c@{main.c}!Clock@{Clock}}
+\index{Clock@{Clock}!main.c@{main.c}}
+\doxysubsubsection{Clock}
+{\footnotesize\ttfamily struct \{ ... \}  Clock}
+
+\mbox{\label{main_8c_aa6a27ba98b525f69a2eae61b8f2c9c6e}} 
+\index{main.c@{main.c}!CurrentDistanceBetweenTeeth@{CurrentDistanceBetweenTeeth}}
+\index{CurrentDistanceBetweenTeeth@{CurrentDistanceBetweenTeeth}!main.c@{main.c}}
+\doxysubsubsection{CurrentDistanceBetweenTeeth}
+{\footnotesize\ttfamily volatile \textbf{ u16} Current\+Distance\+Between\+Teeth}
+
+\mbox{\label{main_8c_a764cbeddc06f422057a1e266ee7c7be6}} 
+\index{main.c@{main.c}!Distance@{Distance}}
+\index{Distance@{Distance}!main.c@{main.c}}
+\doxysubsubsection{Distance}
+{\footnotesize\ttfamily const \textbf{ f32} Distance = 125.\+6637}
+
+\mbox{\label{main_8c_abd01fbb91ebd5a3fb7d3da40c7940297}} 
+\index{main.c@{main.c}!HallEffect@{HallEffect}}
+\index{HallEffect@{HallEffect}!main.c@{main.c}}
+\doxysubsubsection{HallEffect}
+{\footnotesize\ttfamily struct \{ ... \}  Hall\+Effect}
+
+\mbox{\label{main_8c_a0d71c497aa9f03099bec0ec23695a299}} 
+\index{main.c@{main.c}!IR@{IR}}
+\index{IR@{IR}!main.c@{main.c}}
+\doxysubsubsection{IR}
+{\footnotesize\ttfamily struct \{ ... \}  IR}
+
+\mbox{\label{main_8c_add27f83dbe4eac532a7eba7ab092b1c6}} 
+\index{main.c@{main.c}!MIX@{MIX}}
+\index{MIX@{MIX}!main.c@{main.c}}
+\doxysubsubsection{MIX}
+{\footnotesize\ttfamily \textbf{ u16} M\+IX[5] =\{0\}}
+
+
+
+we\textquotesingle{}ll use this array in the mix between displaying the short arrow and Number 6 
+
+\mbox{\label{main_8c_a4b6aae1f1b7f9976355c9a6649ce45c5}} 
+\index{main.c@{main.c}!Motor@{Motor}}
+\index{Motor@{Motor}!main.c@{main.c}}
+\doxysubsubsection{Motor}
+{\footnotesize\ttfamily struct \{ ... \}  Motor}
+
+\mbox{\label{main_8c_abb1721923a951b05389c5df5f15ecee1}} 
+\index{main.c@{main.c}!POV@{POV}}
+\index{POV@{POV}!main.c@{main.c}}
+\doxysubsubsection{POV}
+{\footnotesize\ttfamily struct \{ ... \}  P\+OV}
+
+\mbox{\label{main_8c_a68988a5053a91e5620f364b2744d8f62}} 
+\index{main.c@{main.c}!POV\_u16LongArrow@{POV\_u16LongArrow}}
+\index{POV\_u16LongArrow@{POV\_u16LongArrow}!main.c@{main.c}}
+\doxysubsubsection{POV\_u16LongArrow}
+{\footnotesize\ttfamily \textbf{ u16} P\+O\+V\+\_\+u16\+Long\+Arrow[5] =\{0x20,0x10,0xfff8,0x8,0x10\}}
+
+
+
+this is the array which responsible for displaying the long arrow in the Clock 
+
+\mbox{\label{main_8c_a004a9a857bd629617e96c41d37996181}} 
+\index{main.c@{main.c}!POV\_u16Num1@{POV\_u16Num1}}
+\index{POV\_u16Num1@{POV\_u16Num1}!main.c@{main.c}}
+\doxysubsubsection{POV\_u16Num1}
+{\footnotesize\ttfamily \textbf{ u16} P\+O\+V\+\_\+u16\+Num1[3] =\{0x4,0x2,0x3f\}}
+
+
+
+to display Numbers 
+
+\mbox{\label{main_8c_ab9da8fa3d66b7b7e69cef3beacc85f8a}} 
+\index{main.c@{main.c}!POV\_u16Num2@{POV\_u16Num2}}
+\index{POV\_u16Num2@{POV\_u16Num2}!main.c@{main.c}}
+\doxysubsubsection{POV\_u16Num2}
+{\footnotesize\ttfamily \textbf{ u16} P\+O\+V\+\_\+u16\+Num2[4] =\{0x32,0x29,0x29,0x26\}}
+
+\mbox{\label{main_8c_aaf9f9b2a17404227c87eb01071e8e3fc}} 
+\index{main.c@{main.c}!POV\_u16Num3@{POV\_u16Num3}}
+\index{POV\_u16Num3@{POV\_u16Num3}!main.c@{main.c}}
+\doxysubsubsection{POV\_u16Num3}
+{\footnotesize\ttfamily \textbf{ u16} P\+O\+V\+\_\+u16\+Num3[7] =\{0xe,0x1,0x1,0x7,0x1,0x9,0x6\}}
+
+\mbox{\label{main_8c_a322a452a9d833d10484cde8db559a76a}} 
+\index{main.c@{main.c}!POV\_u16Num6@{POV\_u16Num6}}
+\index{POV\_u16Num6@{POV\_u16Num6}!main.c@{main.c}}
+\doxysubsubsection{POV\_u16Num6}
+{\footnotesize\ttfamily \textbf{ u16} P\+O\+V\+\_\+u16\+Num6[4] =\{0x26,0x25,0x25,0x1e\}}
+
+\mbox{\label{main_8c_a64c4c3c1d39655898753b7519da52c8e}} 
+\index{main.c@{main.c}!POV\_u16Num9@{POV\_u16Num9}}
+\index{POV\_u16Num9@{POV\_u16Num9}!main.c@{main.c}}
+\doxysubsubsection{POV\_u16Num9}
+{\footnotesize\ttfamily \textbf{ u16} P\+O\+V\+\_\+u16\+Num9[7] =\{0xf,0x8,0x8,0xf,0x9,0x9,0xf\}}
+
+\mbox{\label{main_8c_a73dd3c98c25a65408b775585ff5d8bf9}} 
+\index{main.c@{main.c}!POV\_u16ShortArrow@{POV\_u16ShortArrow}}
+\index{POV\_u16ShortArrow@{POV\_u16ShortArrow}!main.c@{main.c}}
+\doxysubsubsection{POV\_u16ShortArrow}
+{\footnotesize\ttfamily \textbf{ u16} P\+O\+V\+\_\+u16\+Short\+Arrow[5] =\{0x8400,0x8200,0xff00,0x4100,0x4200\}}
+
+
+
+this is the array which responsible for displaying the short arrow in the Clock 
+
+\mbox{\label{main_8c_ae874f9a840fff6499e82be9fdd304924}} 
+\index{main.c@{main.c}!POV\_u8Flags@{POV\_u8Flags}}
+\index{POV\_u8Flags@{POV\_u8Flags}!main.c@{main.c}}
+\doxysubsubsection{POV\_u8Flags}
+{\footnotesize\ttfamily volatile \textbf{ u8} P\+O\+V\+\_\+u8\+Flags[9] = \{\textbf{ WE},\textbf{ L\+E\+A\+RN},\textbf{ M\+A\+KE},\textbf{ S\+H\+A\+RE},\textbf{ W\+E\+\_\+\+A\+RE},\textbf{ P\+I\+X\+E\+LS},\textbf{ T\+H\+A\+N\+KS},\textbf{ T\+R\+E\+ND},0\}}
+
+
+
+this array is and indicator, it will be used by IR when user presses on some button the display will show another word in order 
+
+\mbox{\label{main_8c_aafd7bcf751a0b21aef3bb35b1dbdb528}} 
+\index{main.c@{main.c}!u16Counter@{u16Counter}}
+\index{u16Counter@{u16Counter}!main.c@{main.c}}
+\doxysubsubsection{u16Counter}
+{\footnotesize\ttfamily volatile \textbf{ u16} u16\+Counter}
+
+\mbox{\label{main_8c_ab37667e26b7ec9e209e72e79ad4fb969}} 
+\index{main.c@{main.c}!u16Frequency@{u16Frequency}}
+\index{u16Frequency@{u16Frequency}!main.c@{main.c}}
+\doxysubsubsection{u16Frequency}
+{\footnotesize\ttfamily volatile \textbf{ u16} u16\+Frequency}
+
+\mbox{\label{main_8c_a27356be228301bd12e80674246cec669}} 
+\index{main.c@{main.c}!u32Counter@{u32Counter}}
+\index{u32Counter@{u32Counter}!main.c@{main.c}}
+\doxysubsubsection{u32Counter}
+{\footnotesize\ttfamily volatile \textbf{ u32} u32\+Counter[50]}
+
+\mbox{\label{main_8c_ac7b1a66161424e209ffbd9c20063411b}} 
+\index{main.c@{main.c}!u32PeriodicTime@{u32PeriodicTime}}
+\index{u32PeriodicTime@{u32PeriodicTime}!main.c@{main.c}}
+\doxysubsubsection{u32PeriodicTime}
+{\footnotesize\ttfamily volatile \textbf{ u32} u32\+Periodic\+Time}
+
+\mbox{\label{main_8c_a77c76087b8778f0e6b240022cc1e6565}} 
+\index{main.c@{main.c}!u8Button@{u8Button}}
+\index{u8Button@{u8Button}!main.c@{main.c}}
+\doxysubsubsection{u8Button}
+{\footnotesize\ttfamily volatile \textbf{ u8} u8\+Button}
+
+\mbox{\label{main_8c_a5e914f38999954a4fe014efc64b9d237}} 
+\index{main.c@{main.c}!u8DisplayFlag@{u8DisplayFlag}}
+\index{u8DisplayFlag@{u8DisplayFlag}!main.c@{main.c}}
+\doxysubsubsection{u8DisplayFlag}
+{\footnotesize\ttfamily volatile \textbf{ u8} u8\+Display\+Flag}
+
+\mbox{\label{main_8c_a4e44f469e7f827dc6936dc3b3d55d83d}} 
+\index{main.c@{main.c}!u8Flag@{u8Flag}}
+\index{u8Flag@{u8Flag}!main.c@{main.c}}
+\doxysubsubsection{u8Flag}
+{\footnotesize\ttfamily volatile \textbf{ u8} u8\+Flag}
+
+\mbox{\label{main_8c_aede7e5cf27a5d72b1340b644efb229ab}} 
+\index{main.c@{main.c}!u8FlagsIndex@{u8FlagsIndex}}
+\index{u8FlagsIndex@{u8FlagsIndex}!main.c@{main.c}}
+\doxysubsubsection{u8FlagsIndex}
+{\footnotesize\ttfamily volatile \textbf{ u8} u8\+Flags\+Index}
+
+\mbox{\label{main_8c_a6218b34cd0fc816911f2192f0f16350d}} 
+\index{main.c@{main.c}!u8FreqFlag@{u8FreqFlag}}
+\index{u8FreqFlag@{u8FreqFlag}!main.c@{main.c}}
+\doxysubsubsection{u8FreqFlag}
+{\footnotesize\ttfamily volatile \textbf{ u8} u8\+Freq\+Flag}
+
+\mbox{\label{main_8c_a54d3fee0404aa493bf5cd95b7b27b5c8}} 
+\index{main.c@{main.c}!u8IndexCounter@{u8IndexCounter}}
+\index{u8IndexCounter@{u8IndexCounter}!main.c@{main.c}}
+\doxysubsubsection{u8IndexCounter}
+{\footnotesize\ttfamily volatile \textbf{ u8} u8\+Index\+Counter}
+
+\mbox{\label{main_8c_a61797797a0650d7dbe6f492dc48869bc}} 
+\index{main.c@{main.c}!u8OneCycleDone@{u8OneCycleDone}}
+\index{u8OneCycleDone@{u8OneCycleDone}!main.c@{main.c}}
+\doxysubsubsection{u8OneCycleDone}
+{\footnotesize\ttfamily volatile \textbf{ u8} u8\+One\+Cycle\+Done}
+
+\mbox{\label{main_8c_a4335f1db43cd74f3022fdac7cae8a5a9}} 
+\index{main.c@{main.c}!u8ShiftWord@{u8ShiftWord}}
+\index{u8ShiftWord@{u8ShiftWord}!main.c@{main.c}}
+\doxysubsubsection{u8ShiftWord}
+{\footnotesize\ttfamily volatile \textbf{ u8} u8\+Shift\+Word}
+
+\mbox{\label{main_8c_a79777873f51109d5b1dbc28bec24df86}} 
+\index{main.c@{main.c}!u8StartFlag@{u8StartFlag}}
+\index{u8StartFlag@{u8StartFlag}!main.c@{main.c}}
+\doxysubsubsection{u8StartFlag}
+{\footnotesize\ttfamily volatile \textbf{ u8} u8\+Start\+Flag}
+

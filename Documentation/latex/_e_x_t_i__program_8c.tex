@@ -1,0 +1,106 @@
+\doxysection{src/\+E\+X\+T\+I\+\_\+program.c File Reference}
+\label{_e_x_t_i__program_8c}\index{src/EXTI\_program.c@{src/EXTI\_program.c}}
+{\ttfamily \#include \char`\"{}S\+T\+D\+\_\+\+T\+Y\+P\+E\+S.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}B\+I\+T\+\_\+\+M\+A\+T\+H.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}E\+X\+T\+I\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}E\+X\+T\+I\+\_\+private.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}E\+X\+T\+I\+\_\+config.\+h\char`\"{}}\newline
+Include dependency graph for E\+X\+T\+I\+\_\+program.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_e_x_t_i__program_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ M\+E\+X\+T\+I\+\_\+void\+Init} ()
+\item 
+void \textbf{ M\+E\+X\+T\+I\+\_\+void\+Enable\+E\+X\+TI} (\textbf{ u8} Copy\+\_\+u8\+Line)
+\item 
+void \textbf{ M\+E\+X\+T\+I\+\_\+void\+Disable\+E\+X\+TI} (\textbf{ u8} Copy\+\_\+u8\+Line)
+\item 
+void \textbf{ M\+E\+X\+T\+I\+\_\+void\+Sw\+Trigger} (\textbf{ u8} Copy\+\_\+u8\+Line)
+\item 
+void \textbf{ M\+E\+X\+T\+I\+\_\+void\+Set\+Signal\+Latch} (\textbf{ u8} Copy\+\_\+u8\+Line, \textbf{ u8} Copy\+\_\+u8\+Mode)
+\item 
+void \textbf{ M\+E\+X\+T\+I\+\_\+void\+Set\+Call\+Back} (void($\ast$ptr)(void), \textbf{ u8} Copy\+\_\+u8\+Line)
+\item 
+void \textbf{ E\+X\+T\+I0\+\_\+\+I\+R\+Q\+Handler} (void)
+\item 
+void \textbf{ E\+X\+T\+I1\+\_\+\+I\+R\+Q\+Handler} (void)
+\item 
+void \textbf{ E\+X\+T\+I2\+\_\+\+I\+R\+Q\+Handler} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static void($\ast$ \textbf{ E\+X\+T\+I\+\_\+\+Call\+Back} [16])(void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_e_x_t_i__program_8c_a17e9789a29a87d2df54f12b94dd1a0b6}} 
+\index{EXTI\_program.c@{EXTI\_program.c}!EXTI0\_IRQHandler@{EXTI0\_IRQHandler}}
+\index{EXTI0\_IRQHandler@{EXTI0\_IRQHandler}!EXTI\_program.c@{EXTI\_program.c}}
+\doxysubsubsection{EXTI0\_IRQHandler()}
+{\footnotesize\ttfamily void E\+X\+T\+I0\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\label{_e_x_t_i__program_8c_a49cfdd46eb8d0ef3e1987514aa9343dc}} 
+\index{EXTI\_program.c@{EXTI\_program.c}!EXTI1\_IRQHandler@{EXTI1\_IRQHandler}}
+\index{EXTI1\_IRQHandler@{EXTI1\_IRQHandler}!EXTI\_program.c@{EXTI\_program.c}}
+\doxysubsubsection{EXTI1\_IRQHandler()}
+{\footnotesize\ttfamily void E\+X\+T\+I1\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\label{_e_x_t_i__program_8c_ab5a1d9e9c8ef50e0cb9ddb5745a20a14}} 
+\index{EXTI\_program.c@{EXTI\_program.c}!EXTI2\_IRQHandler@{EXTI2\_IRQHandler}}
+\index{EXTI2\_IRQHandler@{EXTI2\_IRQHandler}!EXTI\_program.c@{EXTI\_program.c}}
+\doxysubsubsection{EXTI2\_IRQHandler()}
+{\footnotesize\ttfamily void E\+X\+T\+I2\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\label{_e_x_t_i__program_8c_aac261abd94e812097f70e1eef0e76176}} 
+\index{EXTI\_program.c@{EXTI\_program.c}!MEXTI\_voidDisableEXTI@{MEXTI\_voidDisableEXTI}}
+\index{MEXTI\_voidDisableEXTI@{MEXTI\_voidDisableEXTI}!EXTI\_program.c@{EXTI\_program.c}}
+\doxysubsubsection{MEXTI\_voidDisableEXTI()}
+{\footnotesize\ttfamily void M\+E\+X\+T\+I\+\_\+void\+Disable\+E\+X\+TI (\begin{DoxyParamCaption}\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Line }\end{DoxyParamCaption})}
+
+\mbox{\label{_e_x_t_i__program_8c_aaec835aeb3d8df221c32bc430be3e450}} 
+\index{EXTI\_program.c@{EXTI\_program.c}!MEXTI\_voidEnableEXTI@{MEXTI\_voidEnableEXTI}}
+\index{MEXTI\_voidEnableEXTI@{MEXTI\_voidEnableEXTI}!EXTI\_program.c@{EXTI\_program.c}}
+\doxysubsubsection{MEXTI\_voidEnableEXTI()}
+{\footnotesize\ttfamily void M\+E\+X\+T\+I\+\_\+void\+Enable\+E\+X\+TI (\begin{DoxyParamCaption}\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Line }\end{DoxyParamCaption})}
+
+\mbox{\label{_e_x_t_i__program_8c_a2b5fcefd560214e9f61c75ce6d7d36e6}} 
+\index{EXTI\_program.c@{EXTI\_program.c}!MEXTI\_voidInit@{MEXTI\_voidInit}}
+\index{MEXTI\_voidInit@{MEXTI\_voidInit}!EXTI\_program.c@{EXTI\_program.c}}
+\doxysubsubsection{MEXTI\_voidInit()}
+{\footnotesize\ttfamily void M\+E\+X\+T\+I\+\_\+void\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\label{_e_x_t_i__program_8c_a3760652435e777f7bedd33da470a49e2}} 
+\index{EXTI\_program.c@{EXTI\_program.c}!MEXTI\_voidSetCallBack@{MEXTI\_voidSetCallBack}}
+\index{MEXTI\_voidSetCallBack@{MEXTI\_voidSetCallBack}!EXTI\_program.c@{EXTI\_program.c}}
+\doxysubsubsection{MEXTI\_voidSetCallBack()}
+{\footnotesize\ttfamily void M\+E\+X\+T\+I\+\_\+void\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{void($\ast$)(void)}]{ptr,  }\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Line }\end{DoxyParamCaption})}
+
+\mbox{\label{_e_x_t_i__program_8c_ac5c414d37023d930970bdacdbccd4d0a}} 
+\index{EXTI\_program.c@{EXTI\_program.c}!MEXTI\_voidSetSignalLatch@{MEXTI\_voidSetSignalLatch}}
+\index{MEXTI\_voidSetSignalLatch@{MEXTI\_voidSetSignalLatch}!EXTI\_program.c@{EXTI\_program.c}}
+\doxysubsubsection{MEXTI\_voidSetSignalLatch()}
+{\footnotesize\ttfamily void M\+E\+X\+T\+I\+\_\+void\+Set\+Signal\+Latch (\begin{DoxyParamCaption}\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Line,  }\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\label{_e_x_t_i__program_8c_a12bb24b049e1eff0cda3cca99398c911}} 
+\index{EXTI\_program.c@{EXTI\_program.c}!MEXTI\_voidSwTrigger@{MEXTI\_voidSwTrigger}}
+\index{MEXTI\_voidSwTrigger@{MEXTI\_voidSwTrigger}!EXTI\_program.c@{EXTI\_program.c}}
+\doxysubsubsection{MEXTI\_voidSwTrigger()}
+{\footnotesize\ttfamily void M\+E\+X\+T\+I\+\_\+void\+Sw\+Trigger (\begin{DoxyParamCaption}\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Line }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\label{_e_x_t_i__program_8c_a6c52246d575ebfe5d99357154ec32034}} 
+\index{EXTI\_program.c@{EXTI\_program.c}!EXTI\_CallBack@{EXTI\_CallBack}}
+\index{EXTI\_CallBack@{EXTI\_CallBack}!EXTI\_program.c@{EXTI\_program.c}}
+\doxysubsubsection{EXTI\_CallBack}
+{\footnotesize\ttfamily void($\ast$ E\+X\+T\+I\+\_\+\+Call\+Back[16])(void)\hspace{0.3cm}{\ttfamily [static]}}
+

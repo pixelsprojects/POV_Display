@@ -1,0 +1,68 @@
+\doxysection{src/\+N\+V\+I\+C\+\_\+program.c File Reference}
+\label{_n_v_i_c__program_8c}\index{src/NVIC\_program.c@{src/NVIC\_program.c}}
+{\ttfamily \#include \char`\"{}S\+T\+D\+\_\+\+T\+Y\+P\+E\+S.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}B\+I\+T\+\_\+\+M\+A\+T\+H.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}N\+V\+I\+C\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}N\+V\+I\+C\+\_\+config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}N\+V\+I\+C\+\_\+private.\+h\char`\"{}}\newline
+Include dependency graph for N\+V\+I\+C\+\_\+program.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_n_v_i_c__program_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ M\+N\+V\+I\+C\+\_\+void\+Enable\+Interrupt} (\textbf{ u8} Copy\+\_\+u8\+Per\+ID)
+\item 
+void \textbf{ M\+N\+V\+I\+C\+\_\+void\+Disable\+Interrupt} (\textbf{ u8} Copy\+\_\+u8\+Per\+ID)
+\item 
+void \textbf{ M\+N\+V\+I\+C\+\_\+void\+Set\+Pending\+Flag} (\textbf{ u8} Copy\+\_\+u8\+Per\+ID)
+\item 
+void \textbf{ M\+N\+V\+I\+C\+\_\+void\+Clear\+Pending\+Flag} (\textbf{ u8} Copy\+\_\+u8\+Per\+ID)
+\item 
+\textbf{ u8} \textbf{ M\+N\+V\+I\+C\+\_\+void\+Get\+Active\+Flag} (\textbf{ u8} Copy\+\_\+u8\+Per\+ID)
+\item 
+void \textbf{ M\+N\+V\+I\+C\+\_\+void\+Set\+Priority} (\textbf{ s8} Copy\+\_\+s8\+Interrupt\+ID, \textbf{ u8} Copy\+\_\+u8\+Group\+Priorty, \textbf{ u8} Copy\+\_\+u8\+Sub\+Priorty, \textbf{ u32} Copy\+\_\+u32\+Group)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_n_v_i_c__program_8c_ae314e2e376e72752f03396cf340c8bc8}} 
+\index{NVIC\_program.c@{NVIC\_program.c}!MNVIC\_voidClearPendingFlag@{MNVIC\_voidClearPendingFlag}}
+\index{MNVIC\_voidClearPendingFlag@{MNVIC\_voidClearPendingFlag}!NVIC\_program.c@{NVIC\_program.c}}
+\doxysubsubsection{MNVIC\_voidClearPendingFlag()}
+{\footnotesize\ttfamily void M\+N\+V\+I\+C\+\_\+void\+Clear\+Pending\+Flag (\begin{DoxyParamCaption}\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Per\+ID }\end{DoxyParamCaption})}
+
+\mbox{\label{_n_v_i_c__program_8c_afe0f9e643cec17477044ed28e6e656b0}} 
+\index{NVIC\_program.c@{NVIC\_program.c}!MNVIC\_voidDisableInterrupt@{MNVIC\_voidDisableInterrupt}}
+\index{MNVIC\_voidDisableInterrupt@{MNVIC\_voidDisableInterrupt}!NVIC\_program.c@{NVIC\_program.c}}
+\doxysubsubsection{MNVIC\_voidDisableInterrupt()}
+{\footnotesize\ttfamily void M\+N\+V\+I\+C\+\_\+void\+Disable\+Interrupt (\begin{DoxyParamCaption}\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Per\+ID }\end{DoxyParamCaption})}
+
+\mbox{\label{_n_v_i_c__program_8c_a6178dc3a2470261253c029cd4bb34758}} 
+\index{NVIC\_program.c@{NVIC\_program.c}!MNVIC\_voidEnableInterrupt@{MNVIC\_voidEnableInterrupt}}
+\index{MNVIC\_voidEnableInterrupt@{MNVIC\_voidEnableInterrupt}!NVIC\_program.c@{NVIC\_program.c}}
+\doxysubsubsection{MNVIC\_voidEnableInterrupt()}
+{\footnotesize\ttfamily void M\+N\+V\+I\+C\+\_\+void\+Enable\+Interrupt (\begin{DoxyParamCaption}\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Per\+ID }\end{DoxyParamCaption})}
+
+\mbox{\label{_n_v_i_c__program_8c_ad985d05e93cfac441d05efcec75a177e}} 
+\index{NVIC\_program.c@{NVIC\_program.c}!MNVIC\_voidGetActiveFlag@{MNVIC\_voidGetActiveFlag}}
+\index{MNVIC\_voidGetActiveFlag@{MNVIC\_voidGetActiveFlag}!NVIC\_program.c@{NVIC\_program.c}}
+\doxysubsubsection{MNVIC\_voidGetActiveFlag()}
+{\footnotesize\ttfamily \textbf{ u8} M\+N\+V\+I\+C\+\_\+void\+Get\+Active\+Flag (\begin{DoxyParamCaption}\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Per\+ID }\end{DoxyParamCaption})}
+
+\mbox{\label{_n_v_i_c__program_8c_a6d144c03a6c10577efdd57558aa58eb0}} 
+\index{NVIC\_program.c@{NVIC\_program.c}!MNVIC\_voidSetPendingFlag@{MNVIC\_voidSetPendingFlag}}
+\index{MNVIC\_voidSetPendingFlag@{MNVIC\_voidSetPendingFlag}!NVIC\_program.c@{NVIC\_program.c}}
+\doxysubsubsection{MNVIC\_voidSetPendingFlag()}
+{\footnotesize\ttfamily void M\+N\+V\+I\+C\+\_\+void\+Set\+Pending\+Flag (\begin{DoxyParamCaption}\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Per\+ID }\end{DoxyParamCaption})}
+
+\mbox{\label{_n_v_i_c__program_8c_a23cc0574c42d5c4594c50c8663aac928}} 
+\index{NVIC\_program.c@{NVIC\_program.c}!MNVIC\_voidSetPriority@{MNVIC\_voidSetPriority}}
+\index{MNVIC\_voidSetPriority@{MNVIC\_voidSetPriority}!NVIC\_program.c@{NVIC\_program.c}}
+\doxysubsubsection{MNVIC\_voidSetPriority()}
+{\footnotesize\ttfamily void M\+N\+V\+I\+C\+\_\+void\+Set\+Priority (\begin{DoxyParamCaption}\item[{\textbf{ s8}}]{Copy\+\_\+s8\+Interrupt\+ID,  }\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Group\+Priorty,  }\item[{\textbf{ u8}}]{Copy\+\_\+u8\+Sub\+Priorty,  }\item[{\textbf{ u32}}]{Copy\+\_\+u32\+Group }\end{DoxyParamCaption})}
+

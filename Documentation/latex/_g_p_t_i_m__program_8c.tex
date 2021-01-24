@@ -1,0 +1,114 @@
+\doxysection{src/\+G\+P\+T\+I\+M\+\_\+program.c File Reference}
+\label{_g_p_t_i_m__program_8c}\index{src/GPTIM\_program.c@{src/GPTIM\_program.c}}
+{\ttfamily \#include \char`\"{}S\+T\+D\+\_\+\+T\+Y\+P\+E\+S.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}B\+I\+T\+\_\+\+M\+A\+T\+H.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}G\+P\+T\+I\+M\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}G\+P\+T\+I\+M\+\_\+private.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}G\+P\+T\+I\+M\+\_\+config.\+h\char`\"{}}\newline
+Include dependency graph for G\+P\+T\+I\+M\+\_\+program.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_g_p_t_i_m__program_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ G\+P\+T\+I\+M2\+\_\+void\+Init} (void)
+\item 
+void \textbf{ G\+P\+T\+I\+M2\+\_\+void\+Set\+Busy\+Wait} (\textbf{ u16} G\+P\+T\+I\+M2\+\_\+u16\+Ticks, \textbf{ u32} G\+P\+T\+I\+M2\+\_\+u32\+Clk\+Freq)
+\item 
+void \textbf{ G\+P\+T\+I\+M2\+\_\+void\+Set\+Single\+Interval} (\textbf{ u16} G\+P\+T\+I\+M2\+\_\+u16\+Ticks, \textbf{ u32} G\+P\+T\+I\+M2\+\_\+u32\+Clk\+Freq, void($\ast$Ptr\+To\+Func)(void))
+\item 
+void \textbf{ G\+P\+T\+I\+M2\+\_\+void\+Set\+Periodic\+Interval} (\textbf{ u16} G\+P\+T\+I\+M2\+\_\+u16\+Ticks, \textbf{ u32} G\+P\+T\+I\+M2\+\_\+u32\+Clk\+Freq, void($\ast$Ptr\+To\+Func)(void))
+\item 
+\textbf{ u16} \textbf{ G\+P\+T\+I\+M2\+\_\+u16\+Get\+Elapsed\+Time} (void)
+\item 
+\textbf{ u16} \textbf{ G\+P\+T\+I\+M2\+\_\+u16\+Get\+Remaining\+Time} (void)
+\item 
+void \textbf{ T\+I\+M2\+\_\+\+I\+R\+Q\+Handler} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static volatile \textbf{ u8} \textbf{ G\+P\+T\+I\+M2\+\_\+u8\+Time\+Interval\+Mode} = 5
+\item 
+void($\ast$ \textbf{ G\+P\+T\+I\+M2\+\_\+\+Call\+Back} )(void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_g_p_t_i_m__program_8c_ae9b8f4ddd54991c3855c70c674e257e7}} 
+\index{GPTIM\_program.c@{GPTIM\_program.c}!GPTIM2\_u16GetElapsedTime@{GPTIM2\_u16GetElapsedTime}}
+\index{GPTIM2\_u16GetElapsedTime@{GPTIM2\_u16GetElapsedTime}!GPTIM\_program.c@{GPTIM\_program.c}}
+\doxysubsubsection{GPTIM2\_u16GetElapsedTime()}
+{\footnotesize\ttfamily \textbf{ u16} G\+P\+T\+I\+M2\+\_\+u16\+Get\+Elapsed\+Time (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_g_p_t_i_m__program_8c_ae9b8f4ddd54991c3855c70c674e257e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{_g_p_t_i_m__program_8c_aa7841434b589737dd637fdcc225d2965}} 
+\index{GPTIM\_program.c@{GPTIM\_program.c}!GPTIM2\_u16GetRemainingTime@{GPTIM2\_u16GetRemainingTime}}
+\index{GPTIM2\_u16GetRemainingTime@{GPTIM2\_u16GetRemainingTime}!GPTIM\_program.c@{GPTIM\_program.c}}
+\doxysubsubsection{GPTIM2\_u16GetRemainingTime()}
+{\footnotesize\ttfamily \textbf{ u16} G\+P\+T\+I\+M2\+\_\+u16\+Get\+Remaining\+Time (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\label{_g_p_t_i_m__program_8c_a91f6aaed8ac1cdb4b68c3c15f8056f85}} 
+\index{GPTIM\_program.c@{GPTIM\_program.c}!GPTIM2\_voidInit@{GPTIM2\_voidInit}}
+\index{GPTIM2\_voidInit@{GPTIM2\_voidInit}!GPTIM\_program.c@{GPTIM\_program.c}}
+\doxysubsubsection{GPTIM2\_voidInit()}
+{\footnotesize\ttfamily void G\+P\+T\+I\+M2\+\_\+void\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\label{_g_p_t_i_m__program_8c_a11f4eb9908dc14e4bf6f5d8c6dd21976}} 
+\index{GPTIM\_program.c@{GPTIM\_program.c}!GPTIM2\_voidSetBusyWait@{GPTIM2\_voidSetBusyWait}}
+\index{GPTIM2\_voidSetBusyWait@{GPTIM2\_voidSetBusyWait}!GPTIM\_program.c@{GPTIM\_program.c}}
+\doxysubsubsection{GPTIM2\_voidSetBusyWait()}
+{\footnotesize\ttfamily void G\+P\+T\+I\+M2\+\_\+void\+Set\+Busy\+Wait (\begin{DoxyParamCaption}\item[{\textbf{ u16}}]{G\+P\+T\+I\+M2\+\_\+u16\+Ticks,  }\item[{\textbf{ u32}}]{G\+P\+T\+I\+M2\+\_\+u32\+Clk\+Freq }\end{DoxyParamCaption})}
+
+\mbox{\label{_g_p_t_i_m__program_8c_acc9f9078e4044febf8461a4e4cd99599}} 
+\index{GPTIM\_program.c@{GPTIM\_program.c}!GPTIM2\_voidSetPeriodicInterval@{GPTIM2\_voidSetPeriodicInterval}}
+\index{GPTIM2\_voidSetPeriodicInterval@{GPTIM2\_voidSetPeriodicInterval}!GPTIM\_program.c@{GPTIM\_program.c}}
+\doxysubsubsection{GPTIM2\_voidSetPeriodicInterval()}
+{\footnotesize\ttfamily void G\+P\+T\+I\+M2\+\_\+void\+Set\+Periodic\+Interval (\begin{DoxyParamCaption}\item[{\textbf{ u16}}]{G\+P\+T\+I\+M2\+\_\+u16\+Ticks,  }\item[{\textbf{ u32}}]{G\+P\+T\+I\+M2\+\_\+u32\+Clk\+Freq,  }\item[{void($\ast$)(void)}]{Ptr\+To\+Func }\end{DoxyParamCaption})}
+
+\mbox{\label{_g_p_t_i_m__program_8c_a2a61c9fdee6718b3ce391d77a2510a3d}} 
+\index{GPTIM\_program.c@{GPTIM\_program.c}!GPTIM2\_voidSetSingleInterval@{GPTIM2\_voidSetSingleInterval}}
+\index{GPTIM2\_voidSetSingleInterval@{GPTIM2\_voidSetSingleInterval}!GPTIM\_program.c@{GPTIM\_program.c}}
+\doxysubsubsection{GPTIM2\_voidSetSingleInterval()}
+{\footnotesize\ttfamily void G\+P\+T\+I\+M2\+\_\+void\+Set\+Single\+Interval (\begin{DoxyParamCaption}\item[{\textbf{ u16}}]{G\+P\+T\+I\+M2\+\_\+u16\+Ticks,  }\item[{\textbf{ u32}}]{G\+P\+T\+I\+M2\+\_\+u32\+Clk\+Freq,  }\item[{void($\ast$)(void)}]{Ptr\+To\+Func }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_g_p_t_i_m__program_8c_a2a61c9fdee6718b3ce391d77a2510a3d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{_g_p_t_i_m__program_8c_a38ad4725462bdc5e86c4ead4f04b9fc2}} 
+\index{GPTIM\_program.c@{GPTIM\_program.c}!TIM2\_IRQHandler@{TIM2\_IRQHandler}}
+\index{TIM2\_IRQHandler@{TIM2\_IRQHandler}!GPTIM\_program.c@{GPTIM\_program.c}}
+\doxysubsubsection{TIM2\_IRQHandler()}
+{\footnotesize\ttfamily void T\+I\+M2\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\label{_g_p_t_i_m__program_8c_a0e51fee40c2ce82ba98374307f5fee8a}} 
+\index{GPTIM\_program.c@{GPTIM\_program.c}!GPTIM2\_CallBack@{GPTIM2\_CallBack}}
+\index{GPTIM2\_CallBack@{GPTIM2\_CallBack}!GPTIM\_program.c@{GPTIM\_program.c}}
+\doxysubsubsection{GPTIM2\_CallBack}
+{\footnotesize\ttfamily void($\ast$ G\+P\+T\+I\+M2\+\_\+\+Call\+Back) (void)}
+
+\mbox{\label{_g_p_t_i_m__program_8c_ad3bc6b13792434f6635a4507faa2d48d}} 
+\index{GPTIM\_program.c@{GPTIM\_program.c}!GPTIM2\_u8TimeIntervalMode@{GPTIM2\_u8TimeIntervalMode}}
+\index{GPTIM2\_u8TimeIntervalMode@{GPTIM2\_u8TimeIntervalMode}!GPTIM\_program.c@{GPTIM\_program.c}}
+\doxysubsubsection{GPTIM2\_u8TimeIntervalMode}
+{\footnotesize\ttfamily volatile \textbf{ u8} G\+P\+T\+I\+M2\+\_\+u8\+Time\+Interval\+Mode = 5\hspace{0.3cm}{\ttfamily [static]}}
+

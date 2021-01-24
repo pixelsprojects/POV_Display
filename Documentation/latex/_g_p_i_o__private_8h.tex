@@ -1,0 +1,207 @@
+\doxysection{include/\+G\+P\+I\+O\+\_\+private.h File Reference}
+\label{_g_p_i_o__private_8h}\index{include/GPIO\_private.h@{include/GPIO\_private.h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{_g_p_i_o__private_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ G\+P\+I\+O\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress}~0x40010800
+\item 
+\#define \textbf{ G\+P\+I\+O\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress}~0x40010\+C00
+\item 
+\#define \textbf{ G\+P\+I\+O\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress}~0x40011000
+\item 
+\#define \textbf{ G\+P\+I\+O\+A\+\_\+\+C\+RL}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x00))
+\item 
+\#define \textbf{ G\+P\+I\+O\+A\+\_\+\+C\+RH}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x04))
+\item 
+\#define \textbf{ G\+P\+I\+O\+A\+\_\+\+I\+DR}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x08))
+\item 
+\#define \textbf{ G\+P\+I\+O\+A\+\_\+\+O\+DR}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x0C))
+\item 
+\#define \textbf{ G\+P\+I\+O\+A\+\_\+\+B\+S\+RR}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x10))
+\item 
+\#define \textbf{ G\+P\+I\+O\+A\+\_\+\+B\+RR}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x14))
+\item 
+\#define \textbf{ G\+P\+I\+O\+A\+\_\+\+L\+C\+KR}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x18))
+\item 
+\#define \textbf{ G\+P\+I\+O\+B\+\_\+\+C\+RL}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x00))
+\item 
+\#define \textbf{ G\+P\+I\+O\+B\+\_\+\+C\+RH}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x04))
+\item 
+\#define \textbf{ G\+P\+I\+O\+B\+\_\+\+I\+DR}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x08))
+\item 
+\#define \textbf{ G\+P\+I\+O\+B\+\_\+\+O\+DR}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x0C))
+\item 
+\#define \textbf{ G\+P\+I\+O\+B\+\_\+\+B\+S\+RR}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x10))
+\item 
+\#define \textbf{ G\+P\+I\+O\+B\+\_\+\+B\+RR}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x14))
+\item 
+\#define \textbf{ G\+P\+I\+O\+B\+\_\+\+L\+C\+KR}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x18))
+\item 
+\#define \textbf{ G\+P\+I\+O\+C\+\_\+\+C\+RL}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x00))
+\item 
+\#define \textbf{ G\+P\+I\+O\+C\+\_\+\+C\+RH}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x04))
+\item 
+\#define \textbf{ G\+P\+I\+O\+C\+\_\+\+I\+DR}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x08))
+\item 
+\#define \textbf{ G\+P\+I\+O\+C\+\_\+\+O\+DR}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x0C))
+\item 
+\#define \textbf{ G\+P\+I\+O\+C\+\_\+\+B\+S\+RR}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x10))
+\item 
+\#define \textbf{ G\+P\+I\+O\+C\+\_\+\+B\+RR}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x14))
+\item 
+\#define \textbf{ G\+P\+I\+O\+C\+\_\+\+L\+C\+KR}~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x18))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\label{_g_p_i_o__private_8h_a108fcdf83e82cdb78f1bcb386fae5c6b}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOA\_BASE\_ADDress@{GPIOA\_BASE\_ADDress}}
+\index{GPIOA\_BASE\_ADDress@{GPIOA\_BASE\_ADDress}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOA\_BASE\_ADDress}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress~0x40010800}
+
+\mbox{\label{_g_p_i_o__private_8h_a9c111ddc85e66775e6d3e6ed2e44eb4f}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOA\_BRR@{GPIOA\_BRR}}
+\index{GPIOA\_BRR@{GPIOA\_BRR}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOA\_BRR}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+A\+\_\+\+B\+RR~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x14))}
+
+\mbox{\label{_g_p_i_o__private_8h_a8f16199899812596623780a3bcc46849}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOA\_BSRR@{GPIOA\_BSRR}}
+\index{GPIOA\_BSRR@{GPIOA\_BSRR}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOA\_BSRR}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+A\+\_\+\+B\+S\+RR~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x10))}
+
+\mbox{\label{_g_p_i_o__private_8h_a44ed4308d14771a0118579569d250868}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOA\_CRH@{GPIOA\_CRH}}
+\index{GPIOA\_CRH@{GPIOA\_CRH}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOA\_CRH}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+A\+\_\+\+C\+RH~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x04))}
+
+\mbox{\label{_g_p_i_o__private_8h_aa3c2dd08238377decca3afa9af3be1aa}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOA\_CRL@{GPIOA\_CRL}}
+\index{GPIOA\_CRL@{GPIOA\_CRL}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOA\_CRL}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+A\+\_\+\+C\+RL~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x00))}
+
+\mbox{\label{_g_p_i_o__private_8h_a3aa34ada5c781e9016373b125ba3cb9b}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOA\_IDR@{GPIOA\_IDR}}
+\index{GPIOA\_IDR@{GPIOA\_IDR}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOA\_IDR}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+A\+\_\+\+I\+DR~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x08))}
+
+\mbox{\label{_g_p_i_o__private_8h_a25f77abfd13bacb790f5f4c55c26c23b}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOA\_LCKR@{GPIOA\_LCKR}}
+\index{GPIOA\_LCKR@{GPIOA\_LCKR}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOA\_LCKR}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+A\+\_\+\+L\+C\+KR~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x18))}
+
+\mbox{\label{_g_p_i_o__private_8h_a01d6d1f0b029ae3da79df62eb4f7a69a}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOA\_ODR@{GPIOA\_ODR}}
+\index{GPIOA\_ODR@{GPIOA\_ODR}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOA\_ODR}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+A\+\_\+\+O\+DR~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x0C))}
+
+\mbox{\label{_g_p_i_o__private_8h_a08f6b304f34e573d5ade547e8f0b8c1b}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOB\_BASE\_ADDress@{GPIOB\_BASE\_ADDress}}
+\index{GPIOB\_BASE\_ADDress@{GPIOB\_BASE\_ADDress}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOB\_BASE\_ADDress}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress~0x40010\+C00}
+
+\mbox{\label{_g_p_i_o__private_8h_a0c7c0db6bb2dc88162cec23b7d90700f}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOB\_BRR@{GPIOB\_BRR}}
+\index{GPIOB\_BRR@{GPIOB\_BRR}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOB\_BRR}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+B\+\_\+\+B\+RR~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x14))}
+
+\mbox{\label{_g_p_i_o__private_8h_a655fb7f4dc9f0c07c004e559c9697796}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOB\_BSRR@{GPIOB\_BSRR}}
+\index{GPIOB\_BSRR@{GPIOB\_BSRR}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOB\_BSRR}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+B\+\_\+\+B\+S\+RR~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x10))}
+
+\mbox{\label{_g_p_i_o__private_8h_a9d81eb770dba2e815811e92a63be8e86}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOB\_CRH@{GPIOB\_CRH}}
+\index{GPIOB\_CRH@{GPIOB\_CRH}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOB\_CRH}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+B\+\_\+\+C\+RH~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x04))}
+
+\mbox{\label{_g_p_i_o__private_8h_a08eee36dde1585f0eb4f3ed7e617b8de}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOB\_CRL@{GPIOB\_CRL}}
+\index{GPIOB\_CRL@{GPIOB\_CRL}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOB\_CRL}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+B\+\_\+\+C\+RL~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x00))}
+
+\mbox{\label{_g_p_i_o__private_8h_a8d4fd0ff69da08c3697646d1213b75d1}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOB\_IDR@{GPIOB\_IDR}}
+\index{GPIOB\_IDR@{GPIOB\_IDR}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOB\_IDR}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+B\+\_\+\+I\+DR~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x08))}
+
+\mbox{\label{_g_p_i_o__private_8h_adaf97a0f44fe98a9560992c6bcd9a251}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOB\_LCKR@{GPIOB\_LCKR}}
+\index{GPIOB\_LCKR@{GPIOB\_LCKR}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOB\_LCKR}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+B\+\_\+\+L\+C\+KR~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x18))}
+
+\mbox{\label{_g_p_i_o__private_8h_a08db1d3769d2fe400cffb74e32b67a9f}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOB\_ODR@{GPIOB\_ODR}}
+\index{GPIOB\_ODR@{GPIOB\_ODR}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOB\_ODR}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+B\+\_\+\+O\+DR~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x0C))}
+
+\mbox{\label{_g_p_i_o__private_8h_aff611ecaa7e5f6bf216835514530dace}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOC\_BASE\_ADDress@{GPIOC\_BASE\_ADDress}}
+\index{GPIOC\_BASE\_ADDress@{GPIOC\_BASE\_ADDress}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOC\_BASE\_ADDress}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress~0x40011000}
+
+\mbox{\label{_g_p_i_o__private_8h_ac6a4510b46cf898d3c3a2f56c84386b7}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOC\_BRR@{GPIOC\_BRR}}
+\index{GPIOC\_BRR@{GPIOC\_BRR}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOC\_BRR}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+C\+\_\+\+B\+RR~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x14))}
+
+\mbox{\label{_g_p_i_o__private_8h_a88dcc56c201f13d73e5073857af6aeb5}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOC\_BSRR@{GPIOC\_BSRR}}
+\index{GPIOC\_BSRR@{GPIOC\_BSRR}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOC\_BSRR}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+C\+\_\+\+B\+S\+RR~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x10))}
+
+\mbox{\label{_g_p_i_o__private_8h_a79566c25582add2f4027b5080e06a184}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOC\_CRH@{GPIOC\_CRH}}
+\index{GPIOC\_CRH@{GPIOC\_CRH}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOC\_CRH}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+C\+\_\+\+C\+RH~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x04))}
+
+\mbox{\label{_g_p_i_o__private_8h_aa53c84875636a1d7baeb48fb490b5156}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOC\_CRL@{GPIOC\_CRL}}
+\index{GPIOC\_CRL@{GPIOC\_CRL}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOC\_CRL}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+C\+\_\+\+C\+RL~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x00))}
+
+\mbox{\label{_g_p_i_o__private_8h_aeafc11f32ee218ab815c1923c76579a8}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOC\_IDR@{GPIOC\_IDR}}
+\index{GPIOC\_IDR@{GPIOC\_IDR}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOC\_IDR}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+C\+\_\+\+I\+DR~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x08))}
+
+\mbox{\label{_g_p_i_o__private_8h_ab4cbc24f396d90772bb98a68b1f07ae4}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOC\_LCKR@{GPIOC\_LCKR}}
+\index{GPIOC\_LCKR@{GPIOC\_LCKR}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOC\_LCKR}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+C\+\_\+\+L\+C\+KR~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x18))}
+
+\mbox{\label{_g_p_i_o__private_8h_a54cf46cdf41330942c4279c05bab3af1}} 
+\index{GPIO\_private.h@{GPIO\_private.h}!GPIOC\_ODR@{GPIOC\_ODR}}
+\index{GPIOC\_ODR@{GPIOC\_ODR}!GPIO\_private.h@{GPIO\_private.h}}
+\doxysubsubsection{GPIOC\_ODR}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+C\+\_\+\+O\+DR~$\ast$((volatile \textbf{ u32}$\ast$)(\textbf{ G\+P\+I\+O\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+Dress} + 0x0C))}
+
